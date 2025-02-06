@@ -8,13 +8,15 @@ import org.testng.annotations.Test;
 
 public class T2_new_methods_window extends TestBase {
     @Test
-    public void test_new_methods() {
+    public void test_new_methods() throws InterruptedException {
 
         driver.get("https://www.google.com");
+        Thread.sleep(3000);
 
         // open a new tab
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://www.loopcamp.io");
+        Thread.sleep(3000);
 
         // open a new window
         driver.switchTo().newWindow(WindowType.WINDOW);
