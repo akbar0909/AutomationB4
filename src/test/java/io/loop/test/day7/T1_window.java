@@ -47,7 +47,7 @@ public class T1_window extends TestBase {
             driver.switchTo().window(each);
         }
 
-        System.out.println("driver.getTitle() = " + driver.getTitle());
+        System.out.println("driver.getTitle(new) = " + driver.getTitle());
 
         // switch to original window
         driver.switchTo().window(originalWindow);
